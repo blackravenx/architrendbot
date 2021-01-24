@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "telegrambot-302712",
+    "private_key_id": "164ff9255a6e377b5d2663821842c5121f3cb202",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC1FA2q8r16DtW8\nYDuOsT+qgXC459Q/1zBZ0mFeU1mXMRvZEqADTyuwLEI5SXnobHSj5pZwQdMNHzdI\nRWyoO+sj5zEPCRxvG8np5jLPm5XW1VjjOr/BOucC3hEySugZevjugpsm0ODFv0e/\ntZwlAvOK86sBAwgYpDo++lec9TzBGLXipaMZ5FXVSaTPAP54N3/kBOfBZc8c551Q\nhuA/AAGCXt//4ZPtJMDB5B8SO3GnNAWPf5Pdt/K3m7tlBTTNmhoFn+II/L2PG6c0\n+Wj6Pq3pdYsdv62pPzh7XooWoxI39NjvYmAKc3/11cG1UGB91fVJJfmTFgeoaMSH\nlDJStflNAgMBAAECggEADrFinYcmSD/paGhflMe9nIJ1yM8o2ghGOFeZhnuZZqr5\nsT6xZKtZJmmk8vyLC4i3WzBD7zZsH2GzzOWzOCBqh0aEZM2utLZKxzOiVlWvzheQ\nJ5n2AsIaihFGUHAjDqQ7jDDlUXw77NfFROFB2v/3DoSQkNuz3bn/ruoFz2rXw+ww\nJqZpuiCk6iVDMFvVj02+TNw1+mtQNdvzhhqTk3YfOElCwXykJLnhgxGpWbQa++0c\ncRI/0j1uoIP+WurlRs+wXf7bI8Vxn710evDM0bTBUMJNQLvi0olLLqQhsB3dLh5g\n4pwTNuRsn8YN15+oEsIcUCR3k8XsHinGzADErZqaAQKBgQDg7i0R5RKpepJ0MixB\n/Y9C+wpVOINNXbIV8waFEXqG7GnyyTORVoIsKkBwyhMbxAFQR+4kxzcAJ/WNA4wP\n4FVG5eQPs5aSvrr60FMw0sEHh/IUpRTXzGkg140MEB9IF0UUmVbULamipFBgH/i+\nj08W2e0+gKuGWyKi99jv11svTQKBgQDOFzah6MA+iykfa6qOkgPO+dPWx6VsEDKu\nm/iaVieVc+LZB94uO/wruGcclzTnOP4AHhLdgtUB66b1KGcFoBzxkGVqJqyvsonl\nMS963WkqP+GyksC8l7BNrlJr1A+WeT0PQW5HfgRXtN/wsm5uAQ1YrOyobhBXxsMR\n8Dnu4TTyAQKBgB2lhu864DDSZQdHrams//r2F7CP2E6UMOrPs2ZKnXm3I2fKuS9I\n1bN4hjHXkJkyRnIMaQkT8N3mZmkFtKpLCTJlDqA7LXd+CCsS1kQzIxoZAwFRmOOw\nn5KiloamgVkBKCvE4jrpIdi8C5P/4stLHEOIycpZL0JwNKqCPGewXOZpAoGAbyAh\nO0iPcKoE8IZTnzCokRAw490fG5fYXEKJ2F6gVXv5U+FkMjXyEXkLUGVQB2W5wEJ3\nFa4YQULZ8dNpSaU+NhsQNB7KeqqgpE7TNULyE/ACORHcj1SToi9fDfl4tkCFZhZ3\n6mDO4qQLJHRyCyrSEYCc020Vrt7kDGYmNuKEdAECgYB6rrigCH5k+WHRvRUkrvxH\n3i/ylTBhY+K/x2OeVreMuAiWNSng/FDEzc04Ri0CuQobvSo+MlZ8ZcxGtQZd4Vyk\nRHfm/pj4rap4gFZiiaYbkv/nn3C29QGZtxNylvkE3I2kq7g6TXnEc/OcsYCxJKvD\n7NrKfeWBfGjIS47OFklowg==\n-----END PRIVATE KEY-----\n",
+    "client_email": "architrend-bot@telegrambot-302712.iam.gserviceaccount.com",
+    "client_id": "113819980107434956935",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/architrend-bot%40telegrambot-302712.iam.gserviceaccount.com"
+  }
+  
