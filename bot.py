@@ -75,17 +75,16 @@ def get_slojnost(message): #Ввод сложности
 
 def get_quality(message): #Ввод качества 
     global quality
-    while quality == 0:
-        try:
-            quality=int(message.text)
-            keyboard = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True) #наша клавиатура
-            plan_y = types.KeyboardButton(text='Да') #кнопка «Да»
-            plan_n= types.KeyboardButton(text='Нет')
-            keyboard.add(plan_y,plan_n)
-            bot.send_message(message.chat.id, 'Выполнен ли план? ',reply_markup=keyboard)
-            bot.register_next_step_handler(message, get_plan)
-        except Exception:
-            bot.send_message(message.chat.id, 'Цифрами, пожалуйста')
+    try:
+        quality=int(message.text)
+        keyboard = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True) #наша клавиатура
+        plan_y = types.KeyboardButton(text='Да') #кнопка «Да»
+        plan_n= types.KeyboardButton(text='Нет')
+        keyboard.add(plan_y,plan_n)
+        bot.send_message(message.chat.id, 'Выполнен ли план? ',reply_markup=keyboard)
+        bot.register_next_step_handler(message, get_plan)
+    except Exception:
+        bot.send_message(message.chat.id, 'Цифрами, пожалуйста')
 
 def get_plan(message): #Ввод плана 
     global plan
