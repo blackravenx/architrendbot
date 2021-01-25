@@ -2,6 +2,7 @@ import telebot
 import gspread
 import os
 import datetime
+import pytz
 from oauth2client.service_account import ServiceAccountCredentials
 from telebot import types
 DIRNAME = os.path.dirname(__file__)
@@ -128,6 +129,9 @@ def get_avans_2(message): #Ввод значений аванса
 
 def show(message): #Показываем полное сообщение
     now = datetime.datetime.now()
+    timezone = pytz.timezone("Asia/Almaty")
+    d_aware = timezone.localize(now)
+    d_aware.tzinfo
     dt_string = now.strftime("%d/%m/%Y %H:%M")
     clear_cost = int(count * cost)
     f_slojnost = int(clear_cost/100*slojnost)
