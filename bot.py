@@ -128,15 +128,17 @@ def get_avans_2(message): #Ввод значений аванса
     show(message)
 
 def show(message): #Показываем полное сообщение
-    now = datetime.datetime.now()
-    dt_string = now.astimezone('Asia/Almaty').strftime("%d/%m/%Y %H:%M")
+
+    almaty_zone = pytz.timezone('Asia/Almaty')
+    now = datetime.datetime.now(tz=almaty_zone)
+    dt_string = now.strftime("%d/%m/%Y %H:%M")
     clear_cost = int(count * cost)
     f_slojnost = int(clear_cost/100*slojnost)
     f_quality = int(clear_cost/100*quality)
     f_plan = int(clear_cost/100*plan)
     total = int(clear_cost+f_slojnost+f_quality+f_plan-avans_2)
     bonus_total=int(total - clear_cost+avans_2)
-    bot.send_message(message.chat.id, 'Время: '+str(dt_string)+
+    msg = ('Время: '+str(dt_string)+
     '\nФИО: '+str(name)+
     '\nНаименование продукции или детали: '+str(jobname)+
     '\nКоличество: '+str(count)+
@@ -148,9 +150,11 @@ def show(message): #Показываем полное сообщение
     '\n----------------------------'+
     '\nИтого: '+str(total)+
     '\nБонусы итого: '+str(bonus_total)+
-    '\nЧистая цена: '+str(clear_cost)
-    )
+    '\nЧистая цена: '+str(clear_cost))
+    bot.send_message(message.chat.id, msg)
     add_rows(dt_string, name,jobname, count,cost, slojnost, quality, plan, avans_1, avans_2, total, bonus_total, clear_cost)
+
+
 def add_rows(dt_string, name, jobname, count, cost, slojnost, quality, plan, avans_1,avans_2, total, bonus_total, clear_cost):
     row = [dt_string,name, jobname, count, cost, slojnost, quality, plan, avans_1, avans_2, total, bonus_total, clear_cost]
     sheet.append_row(row)
