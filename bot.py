@@ -129,10 +129,7 @@ def get_avans_2(message): #Ввод значений аванса
 
 def show(message): #Показываем полное сообщение
     now = datetime.datetime.now()
-    timezone = pytz.timezone("Asia/Almaty")
-    d_aware = timezone.localize(now)
-    d_aware.tzinfo
-    dt_string = now.strftime("%d/%m/%Y %H:%M")
+    dt_string = now.astimezone('Asia/Almaty').strftime("%d/%m/%Y %H:%M")
     clear_cost = int(count * cost)
     f_slojnost = int(clear_cost/100*slojnost)
     f_quality = int(clear_cost/100*quality)
